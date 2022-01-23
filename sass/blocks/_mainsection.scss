@@ -1,0 +1,44 @@
+.mainsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 143px;
+  &__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  &-info {
+    margin-bottom: 126px;
+    &__descr {
+      padding: 25px 0;
+    }
+
+    &__btn {
+      display: inline-block;
+      background: #FF0001;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+
+    &__img {
+      align-self: center;
+      img {
+        vertical-align: top;
+        max-width: 100%;
+      }
+    }
+  }
+}

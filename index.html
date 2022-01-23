@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пеликан | Курьерская служба доставки</title>
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+  <script src="./js/slider.js" defer></script>
+  <script src="./js/menu.js" defer></script>
+</head>
+<body >
+  <header class="header container">
+    <div class="header-content">
+      <a href="/" class="header__logo">
+        <img src="./img/logo.svg" alt="Pelikan.Logo" class="header__logo">
+      </a>
+      <div class="header__nav">
+        <nav>
+          <a href="#order" class="header__nav-el">Как заказать</a>
+          <a href="#benefits" class="header__nav-el">Почему мы</a>
+          <a href="#reviews" class="header__nav-el">Отзывы</a>
+        </nav>
+      </div>
+      <div class="header__contacts">
+        <ul>
+          <li>
+            <a href="tel:+7-928-550-03-36" class="header__contacts-el">
+              +7 928 550-03-36
+            </a>
+          </li>
+          <li>
+            <a href="tel:+7-988-210-38-98" class="header__contacts-el">
+              +7 988 210-38-98
+            </a>
+          </li>
+          <li>
+            <p class="header__contacts-el">
+              г. Хасавюрт
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="header__burger">
+        <span></span>
+      </div>
+      <div class="header__burgermenu">
+        <ul class="test">
+          <li class="header__burgermenu-el">
+            <a href="#order" >Как заказать</a>
+          </li>
+          <li>
+            <a href="#benefits" class="header__burgermenu-el">Почему мы</a>
+          </li>
+          <li>
+            <a href="#reviews" class="header__burgermenu-el">Отзывы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- /.header -->
+
+  <section class="mainsection container">
+    <div class="mainsection__info">
+      <div class="mainsection__info-text mainsection-info">
+        <h1 class="mainsection-info__title title">Служба доставки</h1>
+        <div class="mainsection-info__descr descr">
+          Продукты, цветы, еда, выпечка, медикаменты, встреча и отправка посылок — мы займёмся этим!
+        </div>
+        <a href="#order" class="mainsection-info__btn btn-small btn">ЗАКАЗАТЬ</a>
+      </div>
+      <div class="mainsection-info__img">
+        <img src="./img/car-img.svg" alt="Pelikan.DeliveryCar">
+      </div>
+    </div>
+    <div class="mainsection__img">
+      <img src="./img/about-img.png" alt="Pelikan.DeliveryImage">
+    </div>
+  </section>
+
+  <!-- /.main-section -->
+
+  <section class="order container" id="order">
+    <h2 class="order-title section-title">— как заказать</h2>
+    <div class="order-content">
+      <div class="order__info order-block">
+        <div class="order__info-text">
+          <h3 class="order-info__title title">Чтобы заказать отправьте нам ваши контактные данные</h3>
+          <div class="order-ifno__descr descr">
+            Мы заботимся об удобстве, поэтому вы можете заказать также через приложение на мобильном телефоне или позвонить нам 
+            <br>
+            <a class="order-info__tel" href="tel:+7-928-550-03-36">+7 928 550-03-36</a>
+            <a class="order-info__tel" href="tel:+7-988-210-38-98">+7 988 210-38-98</a>
+            <span class="order-info__time">(с 7:30 до 00:00)</span>
+          </div>
+        </div>
+        <div class="order__info-social">
+          <a class="order__info-social-el" href="/">
+            <img src="./img/social/googleplay.png" alt="Pelikan on Google Play">
+          </a>
+          <a class="order__info-social-el" href="/">
+            <img src="./img/social/applestore.png" alt="Pelikan on Appstore">
+          </a>
+          <a class="order__info-social-el" href="/">
+            <img src="./img/social/telegram.png" alt="Pelikan on telegram">
+          </a>
+        </div>
+        <div class="order__info-img">
+          <img src="./img/order-img.png" alt="Pelikan.Talks">
+        </div>
+      </div>
+      
+      <div class="order__form order-block">
+       <div class="order__from-content">
+        <form action="#" class="order-form">
+          <div class="order-form__input">
+            <input type="text" placeholder="Как к вам обращаться?">
+          </div>
+          <div class="order-form__input">
+            <input type="tel" placeholder="Ваш телефон">
+          </div>
+          <div class="order-form__input">
+            <input type="text" placeholder="Откуда забираем?">
+          </div>
+          <div class="order-form__input">
+            <input type="text" placeholder="Куда отправляем?">
+          </div>
+          <div class="order-form__input">
+            <textarea placeholder="Содержимое посылки"></textarea>
+          </div>
+          <div class="order-form__radio-wrapper">
+            <div class="radio-button">
+              <input class="radio-button__el" type="radio" id="payment-cash" name="payment-type" value="cash">
+              <label class="radio-button__text" for="payment-cash">Наличными</label>
+            </div>
+            <div class="radio-button">
+              <input class="radio-button__el" type="radio" id="payment-card" name="payment-type" value="card">
+              <label class="radio-button__text" for="payment-card">Картой</label>
+            </div>
+          </div>
+          <button class="order-form__submit btn btn-big" type="submit">Отправить</button>
+        </form>
+       </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- /.order-section -->
+
+  <secton class="benefits container" id="benefits">
+    <h2 class="benefits-title section-title">— почему мы</h2>
+    <div class="benefits-content">
+      <div class="benefits__text">
+        <h3 class="benefits__text-title title">Мы посвещаем огромное количество времени на улучшение сервиса. Посмотрите наши услуги и детали к ним.</h3>
+        <div class="benefits__text-list">
+          <ul>
+            <li class="benefits__text-list-el">Продукты</li>
+            <li class="benefits__text-list-el">Цветы</li>
+            <li class="benefits__text-list-el">Еда</li>
+            <li class="benefits__text-list-el">Выпечка</li>
+          </ul>
+          <ul>
+            <li class="benefits__text-list-el">Медикаменты</li>
+            <li class="benefits__text-list-el">Встреча посылок</li>
+            <li class="benefits__text-list-el">Отправка посылок</li>
+          </ul>
+        </div>
+      </div>
+      <div class="benefits__slider slider">
+        <div class="benefits__slider-slide benefits__gallery">
+          <div class="benefits__gallery-img img-small">
+            <img src="./img/slider/slider1.png" alt="Pelikan.Slider">
+          </div>
+          <div class="benefits__gallery-img img-small">
+            <img src="./img/slider/slider2.png" alt="Pelikan.Slider">
+          </div>
+          <div class="benefits__gallery-img img-big">
+            <img src="./img/slider/slider6.png" alt="Pelikan.Slider">
+          </div>
+        </div>	
+        <div class="benefits__slider-slide benefits__gallery">
+          <div class="benefits__gallery-img img-small">
+            <img src="./img/slider/slider3.png" alt="Pelikan.Slider">
+          </div>
+          <div class="benefits__gallery-img img-small">
+            <img src="./img/slider/slider4.png" alt="Pelikan.Slider">
+          </div>
+          <div class="benefits__gallery-img img-big">
+            <img src="./img/slider/slider6.png" alt="Pelikan.Slider">
+          </div>
+        </div>
+        <div class="benefits__slider-slide benefits__gallery">
+          <div class="benefits__gallery-img img-small">
+            <img src="./img/slider/slider1.png" alt="Pelikan.Slider">
+          </div>
+          <div class="benefits__gallery-img img-small">
+            <img src="./img/slider/slider2.png" alt="Pelikan.Slider">
+          </div>
+          <div class="benefits__gallery-img img-big">
+            <img src="./img/slider/slider5.png" alt="Pelikan.Slider">
+          </div>
+        </div>	
+        <div class="benefits__slider-slide benefits__gallery">
+          <div class="benefits__gallery-img img-small">
+            <img src="./img/slider/slider3.png" alt="Pelikan.Slider">
+          </div>
+          <div class="benefits__gallery-img img-small">
+            <img src="./img/slider/slider4.png" alt="Pelikan.Slider">
+          </div>
+          <div class="benefits__gallery-img img-big">
+            <img src="./img/slider/slider6.png" alt="Pelikan.Slider">
+          </div>
+        </div>
+      </div>
+    </div>
+  </secton>
+  <!-- /.benefits -->
+
+  <section class="info container">
+    <div class="info__images">
+      <div class="info__images-delivery">
+        <img src="./img/worker.png" alt="Pelikan.Delivery">
+      </div>
+      <div class="info__images-grandmom">
+        <img src="./img/grandmom.png" alt="Pelikan">
+      </div>
+    </div>
+    <div class="info__text">
+      <h2 class="info__text-title">Легко заказать <br> Легко получить</h2>
+      <div class="info__text-descr">Наша задача — как можно быстрее доставить вашу посылку. С заботой укладываем вашу послыку и доставляеем вам со максимальной стерильностью!</div>
+      <ul class="info__text-benefits">
+        <li>
+          <img src="./img/icons/hungred.svg" alt="Pelikan.Delivery100">
+          <p class="info__text-benefits-text">Гарантия доставки</p>
+        </li>
+        <li>
+          <img src="./img/icons/package.svg" alt="Pelikan.Sterility">
+          <p class="info__text-benefits-text">Стерильность</p>
+        </li>
+        <li>
+          <img src="./img/icons/brilliant.svg" alt="Pelikan.Brilliant">
+          <p class="info__text-benefits-text">заботимся о посылке</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- /.info -->
+
+  <section class="reviews container" id="reviews">
+    <h2 class="reviews-title section-title">— ОТЗЫВЫ</h2>
+    <div class="reviews-content">
+      <div class="reviews__slider slider">
+        <div class="reviews__slider-slide">
+          <div class="reviews__slider-content">
+            <div class="reviews__slider-text">
+              <h3 class="title">«Большое спасибо за оперативность, нужно было срочно подарить цветы маме, очень выручили»</h3>
+              <span>Полина Рукина</span>
+            </div>
+            <div class="reviews__slider-images">
+              <img src="./img/review1.jpg" alt="Pelikan.Review">
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slider-slide">
+          <div class="reviews__slider-content">
+            <div class="reviews__slider-text">
+              <h3 class="title">Всегда поймут, пойдут на встречу. И даже пешком километр пройду лишь бы клиент был доволен. Спасибо за то что терпите нас таких вредных иногда клиентов
+              </h3>
+              <span>Полина Рукина</span>
+            </div>
+            <div class="reviews__slider-images">
+              <img src="./img/review1.jpg" alt="Pelikan.Review">
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slider-slide">
+          <div class="reviews__slider-content">
+            <div class="reviews__slider-text">
+              <h3 class="title">Cпасибо вам большое за то, что вы есть 👍 Всегда все лучшее и вовремя!!! Боялись работать с какой-либо доставкой, но вы нас переубедили🔥
+              </h3>
+              <span>Полина Рукина</span>
+            </div>
+            <div class="reviews__slider-images">
+              <img src="./img/review1.jpg" alt="Pelikan.Review">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.reviews -->
+
+  <section class="clients container">
+    <h2 class="clients-title section-title">— НАШИ КЛИЕНТЫ</h2>
+    <div class="clients-descr descr">Ваши любимые магазины наши клиенты! Мы помогаем им развиваться и радовать вас дальше</div>
+    <ul class="clients__list">
+      <li class="clients__list-el">
+        <img src="./img/aliexpress.png" alt="Pelikan.Clients">
+      </li>
+      <li class="clients__list-el">
+        <img src="./img/ozon.png" alt="Pelikan.Clients">
+      </li>
+      <li class="clients__list-el">
+        <img src="./img/wildberries.png" alt="Pelikan.Clients">
+      </li>
+    </ul>
+  </section>
+  <!-- /.clients -->
+
+  <footer class="footer">
+    <div class="footer__text">
+      <h2 class="footer__text-title">FORFIS</h2>
+      <p class="footer__text-tel">+7 937 555-75-50</p>
+      <p class="footer__text-news">Узнавайте новости первыми</p>
+      <div class="footer__text-social">
+        <a href="/" class="footer__text-social-el">
+          <img src="./img/social/watsapp.svg" alt="Pelikan.Social">
+        </a>
+        <a href="/" class="footer__text-social-el">
+          <img src="./img/social/instagramm.svg" alt="Pelikan.Social">
+        </a>
+        <a href="/" class="footer__text-social-el">
+          <img src="./img/social/telegramm.svg" alt="Pelikan.Social">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- /.footer -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</body>
+</html>

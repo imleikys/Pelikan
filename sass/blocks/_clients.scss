@@ -1,0 +1,27 @@
+.clients {
+  margin-bottom: 171px;
+  &-title {
+    margin-bottom: 17px;
+  }
+
+  &-descr {
+    max-width: 445px;
+    margin-bottom: 72px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
+
+    @media (max-width: 1280px) {
+      &-el {
+        max-width: 70%;
+      }
+    }
+  }
+}

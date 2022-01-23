@@ -1,0 +1,207 @@
+$cyan: #60daaa;
+$red: #f45e61;
+
+.title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -0.01em;
+  color: #151515;
+
+  @media (max-width: 1280px) {
+    font-size: 35px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 28px;
+    line-height: 26px;
+  }
+}
+
+.descr {
+  max-width: 565px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  color: #222222;
+  opacity: 0.7;
+
+  @media (max-width: 1280px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 14px;
+    line-height: 13px;
+  }
+}
+
+button {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 1em;
+  padding: 1em 2em;
+  
+  // Using inset box-shadow instead of border for sizing simplicity
+  box-shadow: inset 0 0 0 2px $red;
+  color: $red;
+  font-size: inherit;
+  font-weight: 700;
+
+  // Required, since we're setting absolute on pseudo-elements
+  position: relative;
+  vertical-align: middle;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.btn {
+  background-color: #FF0001;
+  font-weight: 600;
+  color: #FFFFFF;
+  transition: color 0.25s;
+
+  &::before,
+  &::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+
+  &:hover {
+    color: $cyan;
+    background-color: white;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+  
+  &:hover::before {
+    border-top-color: $cyan; 
+    border-right-color: $cyan;
+    transition:
+      width 0.25s ease-out, 
+      height 0.25s ease-out 0.25s; 
+  }
+  
+  &:hover::after {
+    border-bottom-color: $cyan; 
+    border-left-color: $cyan;
+    transition:
+      border-color 0s ease-out 0.5s, 
+      width 0.25s ease-out 0.5s, 
+      height 0.25s ease-out 0.75s; 
+  }
+
+  &-small {
+    padding: 17px 32px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
+
+  &-big {
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 18px;
+    line-height: 28px;
+    border-radius: 6px;
+  }
+}
+
+.draw {
+
+
+// This covers the top & right borders (expands right, then down)
+&::before {
+  top: 0;
+  left: 0;
+}
+
+// And this the bottom & left borders (expands left, then up)
+
+
+
+}
+
+
+.section-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #8F8F8F;
+}
+
+.radio-button {
+  position: relative;
+  display: inline-block;
+
+  &__text {
+    font-size: 18px;
+    line-height: 28px;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      position: relative;
+      display: inline-block;
+      margin-right: 5px;
+      top: 3px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #858585;
+      opacity: 0.15;
+    }
+
+    @media (max-width: 370px) {
+      font-size: 12px;
+      line-height: 7px;
+    }
+  }
+
+  & input[type=radio]:checked + label:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    top: 9px;
+    left: 10px;
+    border-radius: 11px;
+
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    
+    background: #ff0001;
+  }
+
+  &__el {
+    display: none;
+  }
+}
