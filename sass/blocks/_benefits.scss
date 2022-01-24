@@ -24,14 +24,24 @@
       max-width: 570px;
       margin-right: 95px;
 
+      @media (max-width: 1085px) {
+        max-width: 425px;
+      }
+
       @media (max-width: 900px) {
         margin-bottom: 40px;
+        max-width: 100%;
+        margin-right: 0;
       }
 
       @media (max-width: 500px) {
         font-size: 22px;
         line-height: 26px;
         letter-spacing: -0.005em;
+      }
+
+      @media (max-width: 430px) {
+        font-size: 20px;
       }
     }
 
@@ -42,18 +52,40 @@
       justify-content: space-between;  
       flex-grow: 1;
 
+      @media (max-width: 950px) {
+        ul > li {
+          margin-right: 10px;
+        }
+      }
+
       @media (max-width: 900px) {
         flex-direction: column;
 
         ul {
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: space-between;
 
           li {
             & > * + * {
               margin-left: 15px;
             }
+          }
+        }
+      }
+ 
+      @media (max-width: 745px) {
+        ul {
+          li {
+            font-size: 18px;
+          }
+        }
+      }
+
+      @media (max-width: 640px) {
+        ul {
+          li {
+            font-size: 14px;
           }
         }
       }
