@@ -4,6 +4,10 @@
   }
 
   margin-bottom: 140px;
+
+  @media (max-width: 550px) {
+    margin-bottom: 60px;
+  }
 }
 
 .reviews__slider-images {

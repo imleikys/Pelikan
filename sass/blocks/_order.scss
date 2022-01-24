@@ -2,6 +2,10 @@
   position: relative;
   margin-bottom: 140px;
 
+  @media (max-width: 550px) {
+    margin-bottom: 60px;
+  }
+
   &-content {
     display: flex;
     justify-content: space-between;

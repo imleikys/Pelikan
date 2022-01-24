@@ -1,5 +1,9 @@
 .clients {
   margin-bottom: 171px;
+
+  @media (max-width: 550px) {
+    margin-bottom: 60px;
+  }
   &-title {
     margin-bottom: 17px;
   }

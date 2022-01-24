@@ -4,6 +4,10 @@
   flex-direction: row;
   margin-bottom: 140px;
 
+  @media (max-width: 500px) {
+    margin-bottom: 50px;
+  }
+
   &__images{
     flex: 1 1 680px;
     position: relative;

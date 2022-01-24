@@ -1,7 +1,11 @@
 .benefits {
-  padding-bottom: 140px;
+  margin-bottom: 140px;
   display: block;
   
+  @media (max-width: 550px) {
+    margin-bottom: 60px;
+  }
+
   &-title {
     margin-bottom: 41px;
   }
@@ -15,6 +19,10 @@
     justify-content: space-between;
     margin-bottom: 100px;
     align-items: center;
+
+    @media (max-width: 550px) {
+      margin-bottom: 50px;
+    }
 
     @media (max-width: 900px) {
       flex-direction: column;
